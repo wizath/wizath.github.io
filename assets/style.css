@@ -1,0 +1,43 @@
+nav {
+  border-bottom: 1px solid #e7e7e7;
+  background-color: white;
+}
+
+.input-group-text {
+  background-color: white;
+  border-bottom-right-radius: .25rem !important;
+  border-top-right-radius: .25rem !important;
+  border-left-style: none;
+}
+
+.input-group {
+  border-style: none !important;
+}
+
+footer {
+  margin-bottom: 10px;
+}
+
+.content {
+  min-height: calc(100vh - 176px);
+}
+
+.post-url {
+  text-decoration: none;
+  color: #212529;
+}
+
+.post-url:hover {
+  text-decoration: none;
+  color: #212529;
+}
+
+.button-url {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.button-url:hover {
+  text-decoration: none;
+  color: #ffffffff;
+}

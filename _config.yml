@@ -28,11 +28,6 @@ url: https://wizath.github.io
 domain: wizath.github.io
 excerpt_separator: <!--more-->
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

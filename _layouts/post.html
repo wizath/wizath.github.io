@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="posts col-md-8">
+    <div class="post row d-block">
+        <div class="col-12">
+            <h2 class="post-title"><a class="post-url" href="{{ page.url }}">{{ page.title }}</a></h2>
+            {% assign words = content | number_of_words %}
+            {% if words < 360 %} {% assign rt=1 %} {% else %} {% assign rt=words | divided_by:180 %} {% endif %} <span
+                class="text-gray">@{{ page.user }} • {{ page.date | date_to_long_string
+                }} • {{ rt }} minutes to read</span>
+                <div class="image my-2">
+                    <img class="img-fluid" src="/assets/jumbo.png" width="740">
+                </div>
+                <p class="my-2">
+                    {{ page.content }}
+                </p>
+        </div>
+    </div>
+</div>

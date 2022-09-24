@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="posts col-md-8">
+    {% for post in site.posts %}
+    <div class="post row d-block">
+        <div class="col-12">
+            <h2 class="post-title"><a class="post-url" href="{{ post.url }}">{{ post.title }}</a></h2>
+            {% assign words = post.content | number_of_words %}
+            {% if words < 360 %} {% assign rt=1 %} {% else %} {% assign rt=words | divided_by:180 %} {% endif %} <span
+                class="text-gray">@{{ post.user }} • {{ post.date | date_to_long_string
+                }} • {{ rt }} minutes to read</span>
+                <div class="image my-2">
+                    <img class="img-fluid" src="/assets/jumbo.png" width="740">
+                </div>
+                <p class="my-2">
+                    {{ post.excerpt }}
+                </p>
+                <a class="button-url" href="{{ post.url }}"><button type="button"
+                        class="btn btn-outline-secondary float-right">View</button></a>
+                <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="row d-block">
+        <hr>
+    </div>
+    {% endfor %}
+</div>
