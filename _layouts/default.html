@@ -24,4 +24,14 @@
     {% include footer.html %}
 </body>
 
+<script>
+    function displayMenu(event) {
+        if (document.getElementById("navbarSupportedContent").classList.contains("show")) {
+            document.getElementById("navbarSupportedContent").classList.remove("show")
+        } else {
+            document.getElementById("navbarSupportedContent").classList.add("show")
+        }
+    }
+</script>
+
 </html>
